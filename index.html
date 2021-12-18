@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Quiz</title>
+    <link rel="stylesheet" href="./asset/css/css/style.css">
+</head>
+<body>
+<header>
+    <p>view high score</p>
+    <div class="timer" id="timer"></div>
+</header>
+   <h1>Welcome</h1>
+   <p> Answer the following code-related question within the time limit.
+       <br> Keep in mind each questiom  answers incorrect will have deduction of your score/time 
+       <br>by ten seconds!</p>
+   <button class="btn" id="start-btn">Start Code-Quiz</button>
+
+<div class="question hide-screen"  id="questions">
+    <h2 id="test-question"class="test-question"></h2>
+    <div id="choices" class="choices"></div>    
+</div>
+<div id= "end-screen" class="hide-screen">
+    <h1 id="fin" class="fin">here is your score </h1>
+    <input type="text" placeholder="Enter Initial" id="initial" class="initial">
+    <button id="submit"class="submit">Submit</button>
+</div>
+<script src="asset/css/js/index.js"></script>
+<script src="asset/css/js/question.js"></script>
+</body>
+</html>
