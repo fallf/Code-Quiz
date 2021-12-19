@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,11 @@
     <p>view high score</p>
     <div class="timer" id="timer"></div>
 </header>
-   <h1>Welcome</h1>
-   <p> Answer the following code-related question within the time limit.
-       <br> Keep in mind each questiom  answers incorrect will have deduction of your score/time 
+   <h1 class = 'intro'>Welcome</h1>
+   <p class = 'intro'> Answer the following code-related question within the time limit.
+       <br>  Each questiom  answers incorrect will have time deduction 
        <br>by ten seconds!</p>
-   <button class="btn" id="start-btn">Start Code-Quiz</button>
+   <button class="btn intro id="start-btn">Start Code-Quiz</button>
 
 <div class="question hide-screen"  id="questions">
     <h2 id="test-question"class="test-question"></h2>
@@ -29,5 +29,39 @@
 </div>
 <script src="asset/css/js/index.js"></script>
 <script src="asset/css/js/question.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./asset/css/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="score-time">
+            <p id="h-score" > <a class="view-score" href="./highscrore.html"> View high scores</a></p>
+            <p id="t-seconds" class="time">Time: </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- starting section -->
+        <section id="questionsDiv" class="main">
+             Answer the following code-related question within the time limit.
+       <br> Keep in mind each questiom  answers incorrect will have deduction of your score/time 
+       <br>by ten seconds!</p>
+           
+            <button id="startTime" class="btn">Start Quiz</button>
+        </section>
+        <section id="intro-section" class="quiz">
+
+        </section>
+    </main>
+    <script src="./asset/css/js/indexs.js"></script>
 </body>
 </html>
