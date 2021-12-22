@@ -86,7 +86,7 @@ function render(questionIndex) {
     // For loops to loop through all info in array
     for (var i = 0; i < questions.length; i++) {
         // Appends question title only
-        var userQuestion = questions[questionIndex].title;
+        var userQuestion = questions[questionIndex].question;
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
         questionsDiv.className ="questions"
